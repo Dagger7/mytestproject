@@ -1,10 +1,14 @@
-import React from 'react';
+import React, {FC} from 'react';
 import style from './Nav.module.scss';
 
-const NavItem = () => {
+interface IPrors {
+  title: string;
+}
+
+const NavItem: FC<IPrors> = (props) => {
   return (
     <div>
-      <span className={style.navItemContent}>Profile</span>
+      <span className={style.navItemContent}>{props.title}</span>
     </div>
   );
 };

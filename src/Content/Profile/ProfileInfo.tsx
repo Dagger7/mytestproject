@@ -1,11 +1,15 @@
-import React from 'react';
-import style from './Profile.module.scss';
+import React, {FC} from 'react';
 
-const ProfileInfo = () => {
+interface IProps {
+  designation: string;
+  result: string;
+}
+
+const ProfileInfo: FC<IProps> = (props) => {
   return (
     <div>
-      <span>Date of Birth: </span>
-      <span>2 junuary</span>
+      <span>{props.designation}: </span>
+      <span>{props.result}</span>
     </div>
   );
 };
