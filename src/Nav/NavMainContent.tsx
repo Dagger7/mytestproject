@@ -5,10 +5,22 @@ import style from './Nav.module.scss';
 const NavMainContent = () => {
   return (
     <div className={style.navContentContainer}>
-      <NavItem title="Profile" />
-      <NavItem title="Messages" />
-      <NavItem title="News" />
-      <NavItem title="Music" />
+      <NavItem
+        link="/profile"
+        title="Profile"
+      />
+      <NavItem
+        link="/dialogs"
+        title="Dialogs"
+      />
+      <NavItem
+        link="/#"
+        title="News"
+      />
+      <NavItem
+        link="/#"
+        title="Music"
+      />
     </div>
   );
 };
