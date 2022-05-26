@@ -1,0 +1,77 @@
+.profileContainer {
+  width: 100%;
+  margin: 10px;
+  color: black;
+}
+
+.profileHeadImage {
+  width: 100%;
+  max-height: 250px;
+  margin-bottom: 20px;
+  //object-fit: cover;
+}
+
+.profileInfoContainer {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.profileContentContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileImage {
+  width: 170px;
+  height: 170px;
+  margin-right: 50px;
+}
+
+.profileName {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.profilePostsContainer {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.profilePostsHeader {
+  margin-bottom: 20px;
+}
+
+.profilePostsInput {
+  width: 100%;
+  min-height: 90px;
+  background: #e3e3e3;
+  border: 0;
+  align-items: start;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  padding: 0 0 0 5px;
+}
+
+.profilePostsButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.profilePostsPlaceContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.profilePostsPlace{
+  display: flex;
+  margin: 50px 0;
+}
+
+.profilePostsImg {
+  width: 60px;
+  min-height: 60px;
+  border-radius: 50%;
+  margin-right: 30px;
+}

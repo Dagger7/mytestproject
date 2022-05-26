@@ -1,0 +1,18 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: #44e344;
+  min-height: 900px;
+  margin: 10px;
+  color: white;
+}
+
+.navContentContainer {
+ margin: 20px;
+}
+
+.navItemContent {
+ cursor: pointer;
+}
+
