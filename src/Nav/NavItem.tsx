@@ -1,5 +1,6 @@
 import React, {FC} from 'react';
 import style from './Nav.module.scss';
+import {NavLink} from "react-router-dom";
 
 interface IPrors {
   title: string;
@@ -9,12 +10,13 @@ interface IPrors {
 const NavItem: FC<IPrors> = (props) => {
   return (
     <div>
-      <a
-        href={props.link}
-        className={style.navItemContent}
+      <NavLink
+        to={props.link}
+        className={({ isActive }) => !isActive ?
+          style.navItemContent : style.navItemContentActive}
       >
         {props.title}
-      </a>
+      </NavLink>
     </div>
   );
 };

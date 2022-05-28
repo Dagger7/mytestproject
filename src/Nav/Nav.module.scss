@@ -9,11 +9,16 @@
 }
 
 .navContentContainer {
- margin: 20px;
+  margin: 20px;
 }
 
 .navItemContent {
- text-decoration: none;
+  text-decoration: none;
   color: inherit;
+}
+
+.navItemContentActive {
+  text-decoration: none;
+  color: gold;
 }
 

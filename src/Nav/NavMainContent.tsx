@@ -14,11 +14,11 @@ const NavMainContent = () => {
         title="Dialogs"
       />
       <NavItem
-        link="/#"
+        link="/"
         title="News"
       />
       <NavItem
-        link="/#"
+        link="/"
         title="Music"
       />
     </div>
