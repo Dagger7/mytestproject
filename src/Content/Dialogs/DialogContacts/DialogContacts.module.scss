@@ -1,0 +1,28 @@
+.dialogsListContainer {
+  margin-right: 100px;
+}
+
+.contactsList {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactName {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 10px;
+
+  &Active {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: gold;
+    margin-bottom: 10px;
+  }
+}
+
+.messages {
+  margin-left: 100px;
+}

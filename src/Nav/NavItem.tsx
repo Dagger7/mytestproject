@@ -12,6 +12,7 @@ const NavItem: FC<IPrors> = (props) => {
     <div>
       <NavLink
         to={props.link}
+        // to={`/dialogs/${props.link}`}
         className={({ isActive }) => !isActive ?
           style.navItemContent : style.navItemContentActive}
       >

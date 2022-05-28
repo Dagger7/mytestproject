@@ -1,4 +1,4 @@
-.profilePostsButton {
+.button {
   width: 150px;
   min-height: 30px;
   border: 0;
@@ -8,4 +8,16 @@
   background-color: #44e344;
   padding-left: 20px;
   cursor: pointer;
+}
+
+.divider {
+  width: 1px;
+  background-color: black;
+  margin: 0 10px;
+}
+
+.avatar {
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 30px;
 }

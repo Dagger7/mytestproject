@@ -36,7 +36,6 @@ const Profile = () => {
           <textarea
             className={style.profilePostsInput}
             placeholder="your news..."
-
           />
           <div className={style.profilePostsButtonContainer}>
             <ButtonComponent />

@@ -13,11 +13,11 @@ const Content = () => {
             element={<Profile />}
           />
           <Route
-            path="/profile"
+            path="/profile/*"
             element={<Profile />}
           />
           <Route
-            path="/dialogs"
+            path="/dialogs/*"
             element={<Dialogs />}
           />
         </Routes>
