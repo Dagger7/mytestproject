@@ -5,6 +5,36 @@ import ProfilePost from "./ProfilePost";
 import ButtonComponent from "../../Components/ButtonComponent";
 
 const Profile = () => {
+
+  let profileInfoData = [
+    {
+      designation: 'Date of Birth',
+      result: '18 december 2000'
+    },
+    {
+      designation: 'City',
+      result: 'Berezniki'
+    },
+    {
+      designation: 'Education',
+      result: 'БФ ПНИПУ\'22'
+    },
+    {
+      designation: 'Resume',
+      result: 'hh.ru/resume/2a9d4b95ff09f158e90039ed1f34597a6d5a71'
+    },
+  ];
+
+  let profileInfoComponents = profileInfoData.map((el) => <ProfileInfo designation={el.designation} result={el.result} />)
+
+  let profilePostData = [
+    {message:'Why doesn\'t anyone love me?'},
+    {message:'I took a course from IT-KAMASUTRA'},
+    {message:'Why does everyone love me?'}
+  ];
+
+  let profilePostComponents = profilePostData.map((el) => <ProfilePost message={el.message} />)
+
   return (
     <div className={style.profileContainer}>
       <img className={style.profileHeadImage} src="https://phonoteka.org/uploads/posts/2021-06/1624075303_18-phonoteka_org-p-nochnoi-gorod-oboi-krasivo-20.jpg"/>
@@ -12,22 +42,7 @@ const Profile = () => {
         <img className={style.profileImage} src="https://static.wikia.nocookie.net/gensin-impact/images/a/a0/Character_Mona_Thumb.png"/>
         <div className={style.profileContentContainer}>
           <span className={style.profileName}>Dmitry S.</span>
-          <ProfileInfo
-            designation="Date of Birth"
-            result="18 december 2000"
-          />
-          <ProfileInfo
-            designation="City"
-            result="Berezniki"
-          />
-          <ProfileInfo
-            designation="Education"
-            result="БФ ПНИПУ'22"
-          />
-          <ProfileInfo
-            designation="Resume"
-            result="hh.ru/resume/2a9d4b95ff09f158e90039ed1f34597a6d5a71"
-          />
+          {profileInfoComponents}
         </div>
       </div>
       <div className={style.profilePostsContainer}>
@@ -42,9 +57,7 @@ const Profile = () => {
           </div>
         </div>
         <div className={style.profilePostsPlaceContainer}>
-          <ProfilePost message="Why doesn't anyone love me?"/>
-          <ProfilePost message='I took a course from IT-KAMASUTRA'/>
-          <ProfilePost message="Why does everyone love me?"/>
+          {profilePostComponents}
         </div>
       </div>
     </div>

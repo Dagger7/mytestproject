@@ -3,24 +3,31 @@ import NavItem from "./NavItem";
 import style from './Nav.module.scss';
 
 const NavMainContent = () => {
+
+  let navItemsData = [
+    {
+      link: '/profile',
+      title: 'Profile'
+    },
+    {
+      link: '/dialogs',
+      title: 'Dialogs'
+    },
+    {
+      link: '/',
+      title: 'News'
+    },
+    {
+      link: '/',
+      title: 'Music'
+    }
+  ];
+
+  let navItemComponents = navItemsData.map((el) => <NavItem title={el.title} link={el.link} />)
+
   return (
     <div className={style.navContentContainer}>
-      <NavItem
-        link="/profile"
-        title="Profile"
-      />
-      <NavItem
-        link="/dialogs"
-        title="Dialogs"
-      />
-      <NavItem
-        link="/"
-        title="News"
-      />
-      <NavItem
-        link="/"
-        title="Music"
-      />
+      {navItemComponents}
     </div>
   );
 };

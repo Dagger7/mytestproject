@@ -4,6 +4,7 @@ import {NavLink} from "react-router-dom";
 import AvatarComponent from "../../../Components/AvatarComponent";
 
 interface IProps {
+  id: number;
   name: string;
   link: string;
   avatar: string;
